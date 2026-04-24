@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { BuildRecap, SourceChunk } from "@/lib/types";
 import { sampleChunks } from "@/lib/sample-chunks";
 import { generateRecap, chunksToNotes } from "@/lib/generate-recap";
@@ -87,9 +88,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div className="flex items-center gap-2.5">
-              <span className="text-xl font-bold tracking-tight text-foreground">
-                BuildTrace
-              </span>
+              <Image
+                src="/logo.png"
+                alt="BuildTrace"
+                width={160}
+                height={107}
+                className="shrink-0"
+              />
               <span className="inline-flex items-center rounded-full bg-violet-500/10 px-2 py-0.5 text-xs font-medium text-violet-400 border border-violet-500/20">
                 Beta
               </span>
