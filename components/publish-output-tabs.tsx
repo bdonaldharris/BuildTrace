@@ -107,7 +107,7 @@ function OutputPanel({ content, helper }: { content: string; helper: string }) {
           {copied ? "Copied!" : "Copy"}
         </Button>
       </div>
-      <div className="px-4 py-4 max-h-80 overflow-y-auto">
+      <div className="px-4 py-4 max-h-96 overflow-y-auto">
         <pre className="text-sm text-foreground whitespace-pre-wrap font-sans leading-relaxed">
           {content}
         </pre>
