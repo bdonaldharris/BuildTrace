@@ -1,5 +1,21 @@
-import { BuildRecap } from "./types";
+import { BuildRecap, SourceChunk, SourceChunkType } from "./types";
 import { mockRecap } from "./mock-recap";
+
+const CHUNK_TYPE_LABELS: Record<SourceChunkType, string> = {
+  ai_chat: "AI Chat / Prompt",
+  terminal: "Terminal Output",
+  error: "Error / Blocker",
+  decision: "Decision",
+  commit: "Commit",
+  note: "Note",
+  demo: "Demo",
+};
+
+export function chunksToNotes(chunks: SourceChunk[]): string {
+  return chunks
+    .map((chunk) => `[${CHUNK_TYPE_LABELS[chunk.type]}] ${chunk.title}\n${chunk.content}`)
+    .join("\n\n---\n\n");
+}
 
 export async function generateRecap(rawNotes: string): Promise<BuildRecap> {
   try {

@@ -76,6 +76,29 @@ Return only the JSON object. No explanation.
 
 ---
 
+## Chunk Formatting (`lib/generate-recap.ts`)
+
+Before calling the API, `chunksToNotes()` converts the user's `SourceChunk[]` into a single formatted string:
+
+```typescript
+export function chunksToNotes(chunks: SourceChunk[]): string {
+  return chunks
+    .map((chunk) => `[${CHUNK_TYPE_LABELS[chunk.type]}] ${chunk.title}\n${chunk.content}`)
+    .join("\n\n---\n\n");
+}
+```
+
+Output example:
+```
+[AI Chat / Prompt] Choosing the stack
+Asked GPT-4o: "I'm building a hackathon demo..."
+
+---
+
+[Error / Blocker] shadcn initialization failure
+FAILED with CSS variable conflict...
+```
+
 ## API Call Setup (`lib/generate-recap.ts`)
 
 ```typescript

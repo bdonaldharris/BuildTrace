@@ -36,9 +36,11 @@ export default function PublishOutputTabs({ publishOutputs }: PublishOutputTabsP
   return (
     <section>
       <div className="mb-5">
-        <h2 className="text-xl font-semibold text-foreground">Publish Your Build</h2>
+        <h2 className="text-xl font-semibold text-foreground">
+          Your build story is ready.
+        </h2>
         <p className="text-sm text-muted-foreground mt-1">
-          Turn your session into content you can share. Four formats, ready to copy.
+          Copy it. Share it. Document it. Own it. Four formats, ready to paste.
         </p>
       </div>
 
@@ -52,28 +54,16 @@ export default function PublishOutputTabs({ publishOutputs }: PublishOutputTabsP
         </TabsList>
 
         <TabsContent value="linkedin">
-          <OutputPanel
-            content={publishOutputs.linkedInPost}
-            helper={tabs[0].helper}
-          />
+          <OutputPanel content={publishOutputs.linkedInPost} helper={tabs[0].helper} />
         </TabsContent>
         <TabsContent value="readme">
-          <OutputPanel
-            content={publishOutputs.readmeRecap}
-            helper={tabs[1].helper}
-          />
+          <OutputPanel content={publishOutputs.readmeRecap} helper={tabs[1].helper} />
         </TabsContent>
         <TabsContent value="demo">
-          <OutputPanel
-            content={publishOutputs.demoScript}
-            helper={tabs[2].helper}
-          />
+          <OutputPanel content={publishOutputs.demoScript} helper={tabs[2].helper} />
         </TabsContent>
         <TabsContent value="reflection">
-          <OutputPanel
-            content={publishOutputs.builderReflection}
-            helper={tabs[3].helper}
-          />
+          <OutputPanel content={publishOutputs.builderReflection} helper={tabs[3].helper} />
         </TabsContent>
       </Tabs>
     </section>
@@ -101,15 +91,17 @@ function OutputPanel({ content, helper }: { content: string; helper: string }) {
   };
 
   return (
-    <div className="rounded-xl border border-border bg-muted/20 overflow-hidden">
-      <div className="flex items-center justify-between px-4 py-2.5 border-b border-border bg-background/60">
+    <div className="rounded-xl border border-border bg-card/60 overflow-hidden">
+      <div className="flex items-center justify-between px-4 py-2.5 border-b border-border bg-background/40">
         <span className="text-xs text-muted-foreground">{helper}</span>
         <Button
           variant="outline"
           size="sm"
           onClick={handleCopy}
           className={`h-7 px-3 text-xs transition-colors ${
-            copied ? "border-emerald-500 text-emerald-600 bg-emerald-50" : ""
+            copied
+              ? "border-emerald-500/50 text-emerald-400 bg-emerald-500/10"
+              : ""
           }`}
         >
           {copied ? "Copied!" : "Copy"}

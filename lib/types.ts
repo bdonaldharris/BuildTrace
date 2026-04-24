@@ -31,3 +31,19 @@ export type BuildRecap = {
     builderReflection: string;
   };
 };
+
+export type SourceChunkType =
+  | "ai_chat"
+  | "terminal"
+  | "error"
+  | "decision"
+  | "commit"
+  | "note"
+  | "demo";
+
+export type SourceChunk = {
+  id: string;
+  type: SourceChunkType;
+  title: string;
+  content: string;
+};
