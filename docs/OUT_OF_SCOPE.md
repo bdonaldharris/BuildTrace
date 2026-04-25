@@ -15,7 +15,7 @@ No login. No sign-up. No session management. No OAuth. The app is open and state
 No saving recaps. No user history. No cloud storage. Everything lives in React state during the session. When the user refreshes, it's gone. That is fine.
 
 ### GitHub Integration
-No GitHub OAuth. No reading commits from a real repo. No webhook listeners. No API tokens for code platforms. All of that is HindSite territory.
+No GitHub OAuth. No reading commits from a real repo. No webhook listeners. No API tokens for code platforms. BuildTrace accepts pasted or uploaded content only.
 
 ### Browser Extension
 Not in this hackathon. Not even a prototype. BuildTrace is a web app. The extension concept belongs in a future sprint.
@@ -29,8 +29,8 @@ One user, one session, one browser. No shared sessions, no real-time collaborati
 ### Live Telemetry / Real Integrations
 BuildTrace does not connect to ChatGPT, Claude, Cursor, or any live AI tool. It accepts pasted notes only.
 
-### Full HindSite Architecture
-BuildTrace is a POC that validates one core flow. It is not the full HindSite product. Do not attempt to build the broader product vision during this hackathon.
+### Production Platform Architecture
+BuildTrace is a hackathon POC that validates one core flow. Do not attempt to build a broader platform during this event window.
 
 ---
 
@@ -55,6 +55,6 @@ BuildTrace is a POC that validates one core flow. It is not the full HindSite pr
 
 ---
 
-## A Note on HindSite
+## A Note on Scope Creep
 
-BuildTrace may generate ideas that feel like they belong in HindSite. Write them down in a separate notes file if you want — but do not build them now. The hackathon goal is a clean, demoable POC with a strong story. Stay focused.
+BuildTrace may generate ideas worth pursuing later. Write them down in a separate notes file — but do not build them now. The hackathon goal is a clean, demoable POC with a strong story. Stay focused.

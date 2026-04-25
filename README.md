@@ -172,19 +172,14 @@ This is a focused 24-hour POC. The following are intentionally absent:
 - VS Code extension
 - Live telemetry or analytics
 - Multi-user collaboration
-- Full HindSite product architecture
 
 See [docs/OUT_OF_SCOPE.md](docs/OUT_OF_SCOPE.md) for the full list.
 
 ---
 
-## Relationship to HindSite
+## Greenfield Build
 
-BuildTrace is inspired by the broader *hindsight-first development workflow* concept behind the HindSite product idea.
-
-BuildTrace is **not** HindSite. It is a focused hackathon POC validating a smaller slice: can scattered build evidence be transformed into a structured recap, meaningful insights, and a shareable story — with minimal friction and no infrastructure?
-
-Lessons from this build may inform HindSite later.
+BuildTrace was built during the Blackathon 2026 event window as a standalone hackathon proof-of-concept. It does not reuse code from any prior product.
 
 ---
 

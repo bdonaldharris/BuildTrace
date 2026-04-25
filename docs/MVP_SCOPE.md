@@ -60,4 +60,4 @@ Short version:
 - No browser extension
 - No VS Code extension
 - No multi-user features
-- No full HindSite architecture
+- No production platform architecture beyond the hackathon POC
