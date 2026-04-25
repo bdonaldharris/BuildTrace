@@ -329,7 +329,7 @@ export default function Home() {
             </div>
             <div className="mt-5 pt-4 border-t border-amber-500/15">
               <p className="text-xs text-muted-foreground/60 italic">
-                Built by B Donald Harris · Blackathon 2025
+                Built by B Donald Harris · Blackathon 2026
               </p>
             </div>
           </aside>
@@ -340,7 +340,7 @@ export default function Home() {
       <footer className="border-t border-border mt-8">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-2">
           <p className="text-xs text-muted-foreground">
-            BuildTrace · Blackathon 2025 · Coding with AI Track
+            BuildTrace · Blackathon 2026 · Coding with AI Track
           </p>
           <p className="text-xs text-muted-foreground italic">
             The work is real. Now the story can be too.
